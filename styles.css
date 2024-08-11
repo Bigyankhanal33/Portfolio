@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header.header-section {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 60px 0;
+}
+.profile-photo {
+    width: 200px; 
+    height: 200px; 
+    border: 5px solid #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+
+.header-section .display-4 {
+    font-weight: bold;
+}
+
+.header-section .lead {
+    font-size: 1.5rem;
+}
+
+.text-highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bg-navy {
+    background-color: #007bff;
+}
+
+#about {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef); 
+    padding: 60px 0; 
+}
+
+
+.text-navy {
+    color: #001f3f; 
+}
+
+.display-4 {
+    font-size: 3rem; 
+}
+
+.lead {
+    font-size: 1.25rem; /* Larger font size for the paragraph */
+    color: #333; /* Darker color for readability */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+/* Custom styles for the certificate section */
+#certificates {
+    background: #f8f9fa; /* Light background color */
+}
+
+#certificates .img-fluid {
+    border: 3px solid #ddd; /* Light border around images */
+    border-radius: 8px; /* Rounded corners for the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+#certificates .img-fluid:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.modal-content {
+    border-radius: 10px; /* Rounded corners for the modal */
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+#event-date {
+    width: 100%;
+    max-width: 300px; 
+    padding: 10px; 
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Change border color when input is focused */
+#event-date:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style the Datepicker dropdown */
+.ui-datepicker {
+    background: #fff;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+}
+
+/* Style the header of the Datepicker */
+.ui-datepicker-header {
+    background: #007bff; /* Blue background for the header */
+    color: #fff; /* White text for better contrast */
+    border-bottom: 1px solid #007bff; /* Match the border with the header */
+    padding: 10px; /* Add padding to the header */
+    border-radius: 5px 5px 0 0; /* Round the top corners only */
+}
+
+/* Style the Datepicker day cells */
+.ui-datepicker .ui-state-default {
+    background: #f7f7f7; 
+    color: #333; 
+    border-radius: 4px;
+    padding: 5px;
+    transition: background 0.3s ease; 
+}
+
+/* Hover effect for Datepicker day cells */
+.ui-datepicker .ui-state-default:hover {
+    background: #007bff; 
+    color: #fff; 
+}
+
+/* Style the currently selected day */
+.ui-datepicker .ui-state-active {
+    background: #007bff; 
+    color: #fff; 
+    border-radius: 4px; 
+}
+
+footer {
+    background-color: #1a1a1a;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.slick-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .header-section .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-top: 20px;
+    }
+}
